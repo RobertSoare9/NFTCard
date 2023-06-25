@@ -87,4 +87,10 @@ span{
     margin-bottom: 2rem;
     max-width: fit-content;
     max-height: 100%;
+    
+}
+/* creating active states */
+.texthover:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
