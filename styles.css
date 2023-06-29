@@ -84,7 +84,6 @@ span{
 /* image styling */
 .pic{
     border-radius: 0.5rem;
-    margin-bottom: 2rem;
     max-width: 100%;
     max-height: 100%;
     
@@ -94,20 +93,63 @@ span{
     color: hsl(178, 100%, 50%);
     cursor: pointer;
 }
-.img-wrap{
+/* .img-wrap{
     border-radius: 0.5rem;
     max-width: fit-content;
     max-height: 100%;  
     display: flex;
     align-items: center;
     justify-content: center;
+    position:relative;
+}
+.image-container{
+    display: inline-block;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5)
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 .hoverbutton{
     position: absolute;
-    opacity: 0;
-    background-color: hsla(178, 100%, 50%,0.1);
 }
 .hoverbutton:hover{
     opacity: 1;
     cursor: pointer;
-}
+} */
+.img-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .image-container {
+    display: inline-block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%, 0.6); /* Replace with your desired overlay color and opacity */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 0.5rem;
+  }
+  .hoverbutton{
+    position: absolute;
+    opacity: 0;
+  }
+  .hoverbutton:hover{
+    opacity: 1;
+  }
+ 
